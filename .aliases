@@ -147,3 +147,10 @@ alias map="xargs -n1"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+alias toolsupdate="docker pull dockerhub.dev.myscview.com/scssdevops"
+alias tools='docker run --rm -it \
+    -v "/home/$USER":/home/$USER\
+    -v "$PWD":/workspace \
+    -w /workspace \
+    dockerhub.dev.myscview.com/scssdevops'
