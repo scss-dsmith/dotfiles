@@ -155,4 +155,5 @@ alias tools='docker run --rm -it \
     -w /workspace \
 	--env GIT_DISCOVERY_ACROSS_FILESYSTEM=1 \
 	--env GIT_CONFIG_GLOBAL=/home/$USER/.gitconfig \
+  --env HOME=/home/$USER \
     dockerhub.dev.myscview.com/scssdevops'
